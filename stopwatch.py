@@ -80,12 +80,8 @@ class Stopwatch(object):
             sr = int((self.on_target/float(self.stop))*100)
             out3 = "Successrate  " + str(sr) + " %"
             canvas.draw_text(out3,(95,self.canvasy-40), 16, "Yellow")
-            #canvas.draw_line((100, self.canvasy-10), (100+sr, self.canvasy-10), 12, 'Red')
             canvas.draw_line((95, self.canvasy-65), (205, self.canvasy-65), 12, 'Yellow')
             canvas.draw_line((100, self.canvasy-65), (100+sr+2, self.canvasy-65), 12, 'Red')
-            #canvas.draw_line((100, self.canvasy-10), (100+sr, self.canvasy-10), 15, 'Red')
-
-    
 def main():
     stopwatch = Stopwatch()
 if __name__ == "__main__":
